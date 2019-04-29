@@ -37,7 +37,8 @@ class Board
     !taken?(input) && input.to_i.between?(1,9)
   end
 
-  def update
+  def update(input)
+    
   end
 
 
