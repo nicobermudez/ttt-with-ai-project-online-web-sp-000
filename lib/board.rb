@@ -29,7 +29,8 @@ class Board
     cells.count{|cell| cell !== " "}
   end
 
-  def taken?
+  def taken?(input)
+    
   end
 
 
