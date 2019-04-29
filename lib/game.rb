@@ -27,6 +27,32 @@ class Game
     @board.turn_count % 2 == 0 ? @player_1 : @player_2
   end
 
+  def turn
+  player = current_player
+  current_move = player.move(@board)
+  if !@board.valid_move?(current_move)
+    turn
+  else
+    puts "Turn: #{@board.turn_count+1}\n"
+    @board.display
+    @board.update(current_move, player)
+    puts "#{player.token} moved #{current_move}"
+    @board.display
+    puts "\n\n"
+  end
+end
+
+def play
+  while !over?
+    turn
+  end
+  if won?
+    puts "Congratulations #{winner}!"
+  elsif draw?
+    puts "Cat's Game!"
+  end
+end
+
   def over?
     draw? || won?
   end
