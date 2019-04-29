@@ -11,5 +11,6 @@ class Game
     [6,4,2]
   ]
 
-  def intialize(player_1 = Players::Human.new)
+  def intialize(player_1 = Players::Human.new("X"), player_2 = Players::Humann.new("O"), board = Board.new)
+  end
 end
