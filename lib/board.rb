@@ -26,7 +26,7 @@ class Board
   end
 
   def turn_count
-    cells.count{|cell| cell !== " " && cell !==}
+    cells.count{|cell| cell !== " " || cell !== ""}
   end
 
   def taken?(input)
