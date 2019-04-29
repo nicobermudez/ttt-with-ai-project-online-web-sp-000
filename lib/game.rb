@@ -22,7 +22,7 @@ class Game
   end
 
   def over?
-    @board.full? && !won?
+
   end
 
   def won?
@@ -34,6 +34,6 @@ class Game
   end
 
   def draw?
-
+    @board.full? && !won?
   end
 end
