@@ -18,7 +18,10 @@ class Board
   end
 
   def position(input)
-    cells[input.to_i]  
+    cells[input.to_i]
+  end
+
+  def full?
   end
 
 
