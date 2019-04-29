@@ -17,7 +17,7 @@ class Board
     puts " #{cells[6]} | #{cells[7]} | #{cells[8]} "
   end
 
-  def full? 
+  def full?
   end
 
 
