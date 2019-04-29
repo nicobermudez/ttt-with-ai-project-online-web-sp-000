@@ -1,5 +1,4 @@
 module Players
-  class Computer < Player
-    # your code here
+  class Computer < Player 
   end
 end
