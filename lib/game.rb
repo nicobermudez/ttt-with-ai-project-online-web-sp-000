@@ -30,6 +30,6 @@ class Game
   end
 
   def draw?
-    won?
+    !won? ||  
   end
 end
