@@ -26,7 +26,7 @@ class Board
   end
 
   def turn_count
-    cells.count{|cell| cell !== " " || cell !== ""}
+    cells.count{|cell| cell != " " || cell != ""}
   end
 
   def taken?(input)
@@ -36,6 +36,8 @@ class Board
   def valid_move?(input)
     !taken?(input) && input.to_i.between?(1,9)
   end
+
+  def
 
 
 end
