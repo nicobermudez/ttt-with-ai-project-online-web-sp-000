@@ -21,6 +21,9 @@ class Game
     @board.turn_count % 2 == 0 ? @player_1 : @player_2
   end
 
+  def over?
+  end
+
   def won?
     WIN_COMBINATIONS.detect do |combo|
       @board.cells[combo[0]] == @board.cells[combo[1]] &&
@@ -30,6 +33,6 @@ class Game
   end
 
   def draw?
-    !won? || !over? 
+    !won? || !over?
   end
 end
