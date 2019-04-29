@@ -17,6 +17,6 @@ class Game
     @player_2 = player_2
   end
 
-  def current_player 
+  def current_player
   end
 end
