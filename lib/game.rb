@@ -22,7 +22,7 @@ class Game
   end
 
   def over?
-
+    draw? || won?
   end
 
   def won?
