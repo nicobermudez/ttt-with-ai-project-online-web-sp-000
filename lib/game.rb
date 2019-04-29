@@ -18,6 +18,7 @@ class Game
   end
 
   def winner
+    if winning_combo = won?
   end
 
   def current_player
