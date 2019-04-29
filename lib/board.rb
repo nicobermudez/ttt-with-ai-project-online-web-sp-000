@@ -38,7 +38,7 @@ class Board
   end
 
   def update(input)
-    
+    cells[input.to_i - 1] == input
   end
 
 
