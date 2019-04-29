@@ -37,7 +37,7 @@ class Board
     !taken?(input) && input.to_i.between?(1,9)
   end
 
-  def update(input)
+  def update(input, player)
     cells[input.to_i - 1] == input
   end
 
