@@ -9,7 +9,7 @@ module Players
       elsif board.turn_count == 1
         move = '1'
       end
-    
+
     end
 
 
