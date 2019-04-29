@@ -5,7 +5,7 @@ class Board
     reset!
   end
 
-  def reset! 
+  def reset!
   end
 
   def display
